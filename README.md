@@ -8,6 +8,7 @@ I made multiple languages versions, to prevent ugly URL I create simple URL Rewr
 
 ## ToDo
     - Add Language buttons to switch
+    - Complete the banner with some doodles (I love doodles)
     - Update the .htaccess to have a default language
 
 
