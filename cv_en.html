@@ -1,0 +1,217 @@
+﻿<html>
+    <head>
+        <title>Yoann LE MOUËL</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='web/css/style.css' rel='stylesheet' type='text/css'>
+        <link href='web/css/print.css' rel='stylesheet' media='print'>
+        <link href='web/css/animate.css' rel='stylesheet'>
+        
+        <style>            
+            #my-face {
+                width: 33.5%;
+                height: 180px;
+                padding-top: 80px;
+                background-color: #333;
+                margin-top: -172px;
+                text-align: right;
+            }
+            
+            #my-face>img {
+                height: 100px;
+                margin-right: -56px;
+                border: 6px solid #555;
+                
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                border-radius: 100px;
+            }
+            
+            /* Tricky resizing for the face to not cover the name */
+            @media screen and (max-width: 1300px){
+                #my-face {
+                    width: 30%;
+                }
+            }            
+            @media screen and (max-width: 1000px){
+                #my-face {
+                    width: 25%;
+                }
+            }            
+            @media screen and (max-width: 768px){
+                #my-face {
+                    width: 15%;
+                }
+            }
+            
+            /* Remove the face for mobile device */
+            @media screen and (max-width: 600px){
+                #my-name {
+                    margin-top: 0;
+                }
+                #my-face {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="my-name">Yoann <strong>LE MOUËL</strong></h1>
+            <p id="profession-title" style="visibility: hidden;">Software engineer</p>
+            <div id="my-face" style="visibility: hidden;"><img src="web/images/face.png" alt="My face" title="A very pixelated picture of me"/></div>
+        </header>
+        <section id="content">
+            <aside>
+                <section id="contact">
+                    <h1>contact</h1>
+                    <ul>
+                        <li>13 Rue Arago</li>
+                        <li>30000 Nîmes</li>
+                        <li>FRANCE</li>
+                    </ul>
+                    <p>
+                        <a href="mailto://contact@ylemouel.me"><span class="entypo-mail"></span> contact@ylemouel.me</a>
+                    </p>
+                    <p>
+                        <span class="entypo-chat"></span> +33 (0)6.45.72.27.08
+                    </p>
+                </section>
+                <section id="languages">
+                    <h1>languages</h1>
+                    <ul>
+                        <li><strong>French</strong> native language</li>
+                        <li><strong>English</strong> in progress</li>
+                    </ul>
+                </section>
+                <section id="programming">
+                    <h1>programming</h1>
+                    <ul>
+                        <li>Php (Symfony2)</li>
+                        <li>JavaScript</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Java (JEE, Android)</li>
+                        <li>C# (.Net)</li>
+                    </ul>
+                </section>
+                <section id="follow-me">
+                    <h1>follow me</h1>
+                    <ul>
+                        <li><a href="https://fr.linkedin.com/in/yoann-le-mouël-80026270" title="Linked In">LinkedIn <span class="icon entypo-linkedin-circled"></span></a></li>
+                        <li><a href="https://github.com/yojolo" title="GitHub">GitHub <span class="icon entypo-github-circled"></span></a></li>
+                    </ul>
+                </section>
+            </aside>
+        
+            <section id="education">
+                <h1><span class="icon entypo-graduation-cap"></span> Education</h1>
+                <ul class="chrono-list">
+                    <li>
+                        <div class="date">2013 - 2016</div>
+                        <div class="title">Engineering degree in Computer Science</div>
+                        <div class="location">Ecole des Mines d'Alès</div>
+                        <div class="description">
+                            Specialization in software engineering.
+                            Done by apprenticeship.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2011 - 2013</div>
+                        <div class="title">BTS IRIS</div>
+                        <div class="location">Lycée Jean Mermoz, Montpellier (34)</div>
+                        <div class="description">
+                            Technical degree in industrial IT.<br>
+                            Network, Software & Embedded development.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2011</div>
+                        <div class="title">French Baccalauréat S.</div>
+                        <div class="location">Lycée Albert E., Bagnols-sur-Cèze (30)</div>
+                        <div class="description"></div>
+                    </li>
+                </ul>
+            </section>
+            <section id="experience">
+                <h1><span class="icon entypo-rocket"></span> Experience</h1>
+                <ul class="chrono-list">
+                    <li>
+                        <div class="date">2013 - 2016</div>
+                        <div class="title">Groupe ECIA - St Alexandre</div>
+                        <div class="location">Internship</div>
+                        <div class="description">
+                            Maintenance of a management software. Web development in vanilla Php.<br>
+                            Development of a Competency profiling software with Symfony2.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2011</div>
+                        <div class="title">Groupe ECIA - Bagnols-sur-Cèze</div>
+                        <div class="location">Internship</div>
+                        <div class="description">
+                            Maintenance of a management software.<br>
+                            Web development in Php.
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="interests">
+                <h1><span class="icon entypo-brush"></span> Interests</h1>
+                <ul>
+                    <li class="cat-1">Drawing</li>
+                    <li class="cat-1">Painting</li>
+                    <li class="cat-1">Digital painting</li>
+                    <li class="cat-2">3D sculpting</li>
+                    <li class="cat-3">Video game</li>
+                    <li class="cat-3">Game design</li>
+                    <li class="cat-4">Music</li>
+                    <li class="cat-4">Guitar Bass</li>
+                    <li class="cat-4">Piano</li>
+                </ul>
+            </section>
+        </section>
+        
+        <script src="web/js/jquery-2.2.0.min.js"></script>
+        <script>
+            $.fn.extend({
+                animateCss: function (animationName) {
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+                        $(this).removeClass('animated ' + animationName);
+                    });
+                },
+                
+                animateComplete: function (callback) {
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    $(this).one(animationEnd, function() {
+                        callback();
+                    });
+                }
+            });
+        
+            $(document).ready(function(){
+                /* Animate the header when the page is loaded */                
+                $('#my-name').animateCss('rubberBand');
+                $('#my-name').animateComplete(function(){
+                    $('#profession-title').css('visibility', 'visible');
+                    $('#profession-title').animateCss('fadeInUp');
+                });
+                
+                $('#my-face').css('visibility', 'visible');
+                $('#my-face').animateCss('slideInLeft');
+                
+                /* I love useless animations that nobody will ever see... */
+                $('#my-face>img').on('mousedown', function(){
+                    $(this).animateCss('bounce');
+                });
+
+                /* Animate the interests */
+                $('#interests>ul>li').mouseover(function(){
+                    $(this).animateCss('swing');
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+﻿<html>
+    <head>
+        <title>Yoann LE MOUËL</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='web/css/style.css' rel='stylesheet' type='text/css'>
+        <link href='web/css/print.css' rel='stylesheet' media='print'>
+        <link href='web/css/animate.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <h1 id="my-name">Yoann <strong>LE MOUËL</strong></h1>
+            <p id="profession-title" style="display: none;">Ingénieur étude et développement</p>
+        </header>
+        <section id="content">
+            <aside>
+                <section id="contact">
+                    <h1>contact</h1>
+                    <ul>
+                        <li>13 Rue Arago</li>
+                        <li>30000 Nîmes</li>
+                        <li>FRANCE</li>
+                    </ul>
+                    <p>
+                        <a href="mailto://yoann.lm@laposte.net"><span class="entypo-mail"></span> yoann.lm@laposte.net</a>
+                    </p>
+                    <p>
+                        <span class="entypo-chat"></span> 06.45.72.27.08
+                    </p>
+                </section>
+                <section id="languages">
+                    <h1>langues</h1>
+                    <ul>
+                        <li><strong>Français</strong> langue natale</li>
+                        <li><strong>Anglais</strong> pratique professionnelle</li>
+                    </ul>
+                </section>
+                <section id="programming">
+                    <h1>programmation</h1>
+                    <ul>
+                        <li>Php (Symfony2)</li>
+                        <li>JavaScript</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Java (JEE, Android)</li>
+                        <li>C# (.Net)</li>
+                    </ul>
+                </section>
+                <section id="follow-me">
+                    <h1>suivez-moi</h1>
+                    <ul>
+                        <li><a href="#" title="Linked In">LinkedIn <span class="icon entypo-linkedin-circled"></span></a></li>
+                        <li><a href="#" title="GitHub">GitHub <span class="icon entypo-github-circled"></span></a></li>
+                    </ul>
+                </section>
+            </aside>
+        
+            <section id="education">
+                <h1><span class="icon entypo-graduation-cap"></span> Scolarité</h1>
+                <ul class="chrono-list">
+                    <li>
+                        <div class="date">2013 - 2016</div>
+                        <div class="title">Ingénieur Informatique et Réseau (INFRES)</div>
+                        <div class="location">Ecole des Mines d'Alès</div>
+                        <div class="description">
+                            Spécialité Etude et Développement.<br>
+                            Etudes réalisées par apprentissage.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2011 - 2013</div>
+                        <div class="title">BTS IRIS</div>
+                        <div class="location">Lycée Jean Mermoz, Montpellier (34)</div>
+                        <div class="description">
+                            Informatique et Réseau pour l'Industrie et les Services.<br>
+                            Réseaux ethernet et industriels, Développement logiciels & systèmes embarqués.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2011</div>
+                        <div class="title">Baccalauréat Scientifique</div>
+                        <div class="location">Lycée Albert E., Bagnols-sur-Cèze (30)</div>
+                        <div class="description"></div>
+                    </li>
+                </ul>
+            </section>
+            <section id="experience">
+                <h1><span class="icon entypo-rocket"></span> Expériences</h1>
+                <ul class="chrono-list">
+                    <li>
+                        <div class="date">2013 - 2016</div>
+                        <div class="title">Groupe ECIA - St Alexandre</div>
+                        <div class="location">Apprentissage</div>
+                        <div class="description">
+                            Maintenance d'un progiciel de gestion. Développement web en Php.<br>
+                            Développement d'un outil de gestion des compétences avec le framework Symfony2.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2011</div>
+                        <div class="title">Groupe ECIA - Bagnols-sur-Cèze</div>
+                        <div class="location">Apprentissage</div>
+                        <div class="description">
+                            Maintenance d'un progiciel de gestion.<br>
+                            Développement web en Php.
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="interests">
+                <h1><span class="icon entypo-brush"></span> Centre d'intérets </h1>
+                <ul>
+                    <li class="cat-1">Dessin</li>
+                    <li class="cat-1">Peinture</li>
+                    <li class="cat-1">Peinture digitale</li>
+                    <li class="cat-2">Modélisation 3D</li>
+                    <li class="cat-3">Jeux vidéos</li>
+                    <li class="cat-3">Game design</li>
+                    <li class="cat-4">Musique</li>
+                    <li class="cat-4">Guitare Basse</li>
+                    <li class="cat-4">Piano</li>
+                </ul>
+            </section>
+        </section>
+        
+        <script src="web/js/jquery-2.2.0.min.js"></script>
+        <script>
+            $.fn.extend({
+                animateCss: function (animationName) {
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+                        $(this).removeClass('animated ' + animationName);
+                    });
+                }
+            });
+        
+            $(document).ready(function(){
+                /* Animate the header when the page is loaded */
+                $('#my-name').animateCss('jello');
+                $('#my-name').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                    $('#profession-title').show();
+                    $('#profession-title').animateCss('fadeInUp');
+                });
+                
+                /* Animate the interests */
+                $('#interests>ul>li').mouseover(function(){
+                    $(this).animateCss('swing');
+                });
+            });
+        </script>
+    </body>
+</html>
