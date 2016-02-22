@@ -1,5 +1,5 @@
 RewriteEngine On
 
-RewriteBase "/MyCV/"
+RewriteBase "/cv/"
 RewriteRule ^$ cv_fr.html
 RewriteRule ^([a-z]+)$ cv_$1.html
