@@ -12,7 +12,12 @@
     <body>
         <header>
             <h1 id="my-name">Yoann <strong>LE MOUËL</strong></h1>
-            <p id="profession-title" style="display: none;">Ingénieur étude et développement</p>
+            <p id="profession-title" style="visibility: hidden;">Ingénieur étude et développement</p>
+            <div id="my-face" style="visibility: hidden;"><img src="web/images/face.png" alt="My face" title="Une photo de moi très pixellizée"/></div>
+            <ul id="language">
+                <li class="selected"><a href="fr">Fr</a></li>
+                <li><a href="en">En</a></li>
+            </ul>
         </header>
         <section id="content">
             <aside>
@@ -132,17 +137,32 @@
                     $(this).addClass('animated ' + animationName).one(animationEnd, function() {
                         $(this).removeClass('animated ' + animationName);
                     });
+                },
+                
+                animateComplete: function (callback) {
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    $(this).one(animationEnd, function() {
+                        callback();
+                    });
                 }
             });
         
             $(document).ready(function(){
-                /* Animate the header when the page is loaded */
-                $('#my-name').animateCss('jello');
-                $('#my-name').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                    $('#profession-title').show();
+                /* Animate the header when the page is loaded */                
+                $('#my-name').animateCss('rubberBand');
+                $('#my-name').animateComplete(function(){
+                    $('#profession-title').css('visibility', 'visible');
                     $('#profession-title').animateCss('fadeInUp');
                 });
                 
+                $('#my-face').css('visibility', 'visible');
+                $('#my-face').animateCss('slideInLeft');
+                
+                /* I love useless animations that nobody will ever see... */
+                $('#my-face>img').on('mousedown', function(){
+                    $(this).animateCss('bounce');
+                });
+
                 /* Animate the interests */
                 $('#interests>ul>li').mouseover(function(){
                     $(this).animateCss('swing');

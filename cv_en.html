@@ -8,60 +8,17 @@
         <link href='web/css/style.css' rel='stylesheet' type='text/css'>
         <link href='web/css/print.css' rel='stylesheet' media='print'>
         <link href='web/css/animate.css' rel='stylesheet'>
-        
-        <style>            
-            #my-face {
-                width: 33.5%;
-                height: 180px;
-                padding-top: 80px;
-                background-color: #333;
-                margin-top: -172px;
-                text-align: right;
-            }
-            
-            #my-face>img {
-                height: 100px;
-                margin-right: -56px;
-                border: 6px solid #555;
-                
-                -webkit-border-radius: 100px;
-                -moz-border-radius: 100px;
-                border-radius: 100px;
-            }
-            
-            /* Tricky resizing for the face to not cover the name */
-            @media screen and (max-width: 1300px){
-                #my-face {
-                    width: 30%;
-                }
-            }            
-            @media screen and (max-width: 1000px){
-                #my-face {
-                    width: 25%;
-                }
-            }            
-            @media screen and (max-width: 768px){
-                #my-face {
-                    width: 15%;
-                }
-            }
-            
-            /* Remove the face for mobile device */
-            @media screen and (max-width: 600px){
-                #my-name {
-                    margin-top: 0;
-                }
-                #my-face {
-                    display: none;
-                }
-            }
-        </style>
+
     </head>
     <body>
         <header>
             <h1 id="my-name">Yoann <strong>LE MOUËL</strong></h1>
             <p id="profession-title" style="visibility: hidden;">Software engineer</p>
             <div id="my-face" style="visibility: hidden;"><img src="web/images/face.png" alt="My face" title="A very pixelated picture of me"/></div>
+            <ul id="language">
+                <li><a href="fr">Fr</a></li>
+                <li class="selected"><a href="en">En</a></li>
+            </ul>
         </header>
         <section id="content">
             <aside>
