@@ -1,7 +1,7 @@
 /* *** Imports *** */
     @import url(http://weloveiconfonts.com/api/?family=entypo);
-        /* entypo */
-        [class*="entypo-"]:before {
+    /* entypo */
+    [class*="entypo-"]:before {
           font-family: 'entypo', sans-serif;
     }
 
@@ -11,7 +11,7 @@
     }
 
     body, a {
-        font-family: 'Roboto Condensed', sans-serif;
+        font-family: Roboto, sans-serif;
         font-weight: 300;
     }
 
@@ -53,17 +53,19 @@
         margin: 0;
     }
 
-    body>header>h1{
+    #my-name{
+        height: 70px;
         font-size: 3em;
         font-weight: 300;
         color: white;
     }
-
-    body>header>h1 strong {
+    
+    #my-name strong{
         font-weight: 400;
     }
-
-    body>header>p {
+    
+    #profession-title {
+        height: 40px;
         font-size: 1.5em;
         margin-top: -10px;
         color: #5ca;
@@ -72,7 +74,7 @@
     #my-face {
         width: 33.5%;
         height: 180px;
-        margin-top: -172px;
+        margin-top: -180px;
         text-align: right;
         
         background-image: url("../images/banner_bg.png");
@@ -204,11 +206,15 @@
     ul.chrono-list>li .date, ul.chrono-list>li .title{
         display: inline-block;
     }
+    
+    ul.chrono-list>li .title, ul.chrono-list>li .location {
+        white-space: nowrap;
+    }
 
     ul.chrono-list>li .description {
-        float: left;
         width: 100%;
         min-height: 20px;
+        padding-top: 25px;
         margin-bottom: 10px;
         margin-left: 15%;
         font-style: italic;
