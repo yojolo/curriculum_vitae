@@ -294,28 +294,38 @@
     }
 
     @media screen and (max-width: 768px){
+        
+        #profession-title {
+            font-size: 1em;
+        }
+        
         #content>aside {
             float: none;
-            width: 90%;
+            width: 96%;
             margin: 0 auto;
             text-align: left;
-            padding: 5px 5%;
+            padding: 5px 2%;
             background-color: #ddd;
         }
         
         #content>aside>section {
             display: inline-block;
-            width: 22%;
+            width: 23%;
             vertical-align: top;
-            margin-left: 2%;
+            margin-left: 1%;
             
-            height: 150px;
+            height: 170px;
             
             border-right: 1px solid #888;
         }
         
+        #content>aside>section:first-child {
+            width: 30%;
+        }
+        
         #content>aside>section:last-child{
             border: none;
+            width: 15%;
         }
         
         #content>aside>section ul {
@@ -323,6 +333,10 @@
         }
         
         #content>section {
+            width: 90%;
+        }
+        
+        ul.chrono-list>li .description {
             width: 90%;
         }
     }
@@ -344,6 +358,12 @@
         /* Remove the face for mobile device */
         #my-name {
             margin-top: 0;
+            font-size: 2em;
+            height: 50px;
+        }
+        
+        #profession-title {
+            font-size: 1em;
         }
         #my-face {
             display: none;
@@ -359,9 +379,24 @@
             text-align: center;
         }
         
+        #content>aside>section:first-child , #content>aside>section:last-child{
+            width: 100%;
+        }
+        
         #content>aside>section>ul li{
             display: inline-block;
             margin: 0 5px;
+        }
+        
+        ul.chrono-list>li .description {
+            padding-top: 0;
+        }
+        ul.chrono-list>li .location {
+            float: none;
+            display: block;
+            padding-top: 20px;
+            margin-left: 50px;
+            text-align: left;
         }
     }
     
