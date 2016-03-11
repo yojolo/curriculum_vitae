@@ -10,6 +10,10 @@ body>header {
     box-shadow: none;
 }
 
+#language {
+	display: none;
+}
+
 #my-face {
     display: none;
 }
@@ -27,4 +31,10 @@ body>header {
 
 #follow-me {
     display: none;
+}
+
+/* *** Chrono list *** */
+ul.chrono-list>li .description {
+	width: 85%;
+	text-align: justify;
 }
