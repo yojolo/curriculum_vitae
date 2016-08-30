@@ -284,6 +284,10 @@
         background-color: #c75;
         border-color: #c75;
     }
+	#interests>ul>li.cat-5 {
+        background-color: #8763BF;
+        border-color: #8763BF;
+    }
 
 
 /* *** Responsive rules *** */
